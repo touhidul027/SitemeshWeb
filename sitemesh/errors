@@ -1,0 +1,16 @@
+errors :
+E1 - Nothing specific but shown cross sign on project root.
+-----------------------------------------------------------
+For me, this happens with Maven and Eclipse/STS whenever I update my IDE 
+or import an existing Maven project. Go to the "Problems tab" 
+(Window -> Show View -> Problems) and see what it says. Recently, the 
+problems tab showed Project configuration is not up-to-date ... and 
+suggested that I use Maven to update my project configuration, and 
+this solved the "red X" problem. To do this, in the "Project Explorer" 
+view, trigger the context menu and select 
+Maven -> Update Project, as seen in this screenshot snippet:
+Description	Resource	Path	Location	Type
+Cannot change version of project facet Dynamic Web Module to 4.0.	sitemesh		line 1	Maven Java EE Configuration Problem
+
+same the model version of <modelVersion>4.0.0</modelVersion> to dynamic 
+module from project facets.
